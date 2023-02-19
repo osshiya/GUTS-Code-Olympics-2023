@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Rings – Easy</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #FFFDEE;
+        }
+        .rings{
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+        .ring {
+            height: 9.5vw;
+            width: 9.5vw;
+            background-color: none;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 19px;
+            display: inline-block;
+
+            position: absolute;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+        .blue {
+            border-color: #0080CB;
+            left: calc(50% - 13vw);
+            top: calc(50% - 6.5vw);
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .yellow {
+            border-color: #FDB404;
+            left: calc(50% - 6.5vw);
+            top: calc(50%);
+            transform: translate(-50%, -50%);
+        }
+        .yellow-1 {
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+        .yellow-2 {
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 100%, 100% 0);
+        }
+        .black {
+            border-color: #0A0A09;
+            top: calc(50% - 6.5vw);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .black-1 {
+            z-index: -2;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        .black-2 {
+            z-index: 0;
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        .green {
+            border-color: #05A74D;
+            left: calc(50% + 6.5vw);
+            top: calc(50%);
+            transform: translate(-50%, -50%);
+        }
+        .green-1 {
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+        .green-2 {
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 100%, 100% 0);
+        }
+        .red {
+            border-color: #F02C4A;
+            left: calc(50% + 13vw);
+            top: calc(50% - 6.5vw);
+            transform: translate(-50%, -50%);
+        }
+        .red-1 {
+            z-index: -2;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        .red-2 {
+            z-index: 0;
+            clip-path: polygon(100% 100%, 100% 0, 0 100%);
+        }
+        .cyan{
+            border-color: #A5F2F3;
+            left: 50%;
+            top: calc(50%  + 6.5vw);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+        .cyan-1 {
+            z-index: -2;
+        }
+        .cyan-2 {
+            z-index: 2;
+            clip-path: polygon(0 0, 300% 0, 300% 100%);
+        }
+        .cyan-3 {
+            z-index: 2;
+            clip-path: polygon(0 0, 50% 0, 60% 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="rings">
+        <span class="ring ring-1 blue blue-1"></span>
+        <span class="ring ring-1 blue blue-2"></span>
+        <span class="ring ring-2 yellow yellow-1"></span>
+        <span class="ring ring-2 yellow yellow-2"></span>
+        <span class="ring ring-3 black black-1"></span>
+        <span class="ring ring-3 black black-2"></span>
+        <span class="ring ring-4 green green-1"></span>
+        <span class="ring ring-4 green green-2"></span>
+        <span class="ring ring-5 red red-1"></span>
+        <span class="ring ring-5 red red-2"></span>
+        <span class="ring ring-6 cyan cyan-1"></span>
+        <span class="ring ring-6 cyan cyan-2"></span>
+        <span class="ring ring-6 cyan cyan-3"></span>
+    </div>
+</body>
+</html>
