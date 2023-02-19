@@ -59,7 +59,7 @@ for i in range(stages):
             button4p = button1p
             button4 = byPos(lst, i, button4p)
         elif p == 2:
-            button4p = 1
+            button4p = 0
             button4 = byPos(lst, i, button4p)
         elif p ==3 or p== 4:
             button4p = button2p
